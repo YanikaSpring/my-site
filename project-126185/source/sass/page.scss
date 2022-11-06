@@ -1,0 +1,23 @@
+@import "./abstracts/variables.scss";
+@import "./fonts.scss";
+
+body {
+  background-color: $white;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 140px 140px 1fr;
+  overflow-x: hidden;
+
+  @media (min-width: $tabletWidth) {
+    display: grid;
+    grid-template-columns: 1fr 132px 132px 132px 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: grid;
+    grid-template-columns: 1fr 245px 245px 245px 245px 1fr;
+    column-gap: 80px;
+  }
+}

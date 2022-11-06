@@ -1,0 +1,278 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
+.program-information {
+  margin: 0 auto 25px auto;
+  width: 280px;
+
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 auto 18px auto;
+    width: 709px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    margin: 0 auto 159px auto;
+    flex-direction: column;
+    padding: 0 0 0 15px;
+    width: 1220px;
+  }
+}
+
+.program-information__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  margin: 0 0 43px 0;
+
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 45px 9px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 0 42px 0;
+  }
+}
+
+.program-information__list {
+  list-style-type: none;
+  padding: 0 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  counter-reset: section;
+
+
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 0 20px 9px;
+    border-bottom: 1px solid $mercury;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.program-information__item {
+  position: relative;
+  margin: 0 0 26px 0;
+  padding: 0;
+
+
+  @media (min-width: $tabletWidth) {
+    padding: 141px 0 57px 0;
+    position: relative;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 141px 0 57px 0;
+    margin: 0;
+    width: 250px;
+  }
+}
+
+.program-information__item:first-child {
+  @media (min-width: $tabletWidth) {
+    margin: 0 183px 45px 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-right: 94px;
+    width: 230px;
+  }
+}
+
+.program-information__item:nth-child(2) {
+  @media (min-width: $desktopWidth) {
+    margin-right: 80px;
+    width: 246px;
+  }
+}
+
+.program-information__item:nth-child(3) {
+  @media (min-width: $tabletWidth) {
+    margin-right: 179px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-right: 72px;
+    width: 248px;
+  }
+}
+
+.program-information__item::after {
+  @media (min-width: $tabletWidth) {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: $concrete;
+    z-index: -1;
+    top: -10px;
+    left: 113px;
+  }
+}
+
+.program-information__item:first-child::after {
+  @media (min-width: $tabletWidth) {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: $concrete;
+    z-index: -1;
+    top: -11px;
+    left: 120px;
+  }
+}
+
+.program-information__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $tundora;
+  margin: 0;
+
+
+  @media (min-width: $tabletWidth) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+.program-information__item--leaf {
+  position: relative;
+}
+
+.program-information__item--leaf::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/leaf.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 27px;
+    left: 0;
+  }
+}
+
+.program-information__item--water {
+  position: relative;
+}
+
+.program-information__item--water::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/water.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 27px;
+    left: 0;
+  }
+}
+
+.program-information__item--cutlery {
+  position: relative;
+}
+
+.program-information__item--cutlery::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/cutlery.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 28px;
+    left: 0;
+  }
+}
+
+.program-information__item--scales {
+  position: relative;
+}
+
+.program-information__item--scales::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/scales.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  top: -2px;
+  left: -80px;
+
+  @media (min-width: $tabletWidth) {
+    background-color: $apple;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    top: 28px;
+    left: 0;
+  }
+}
+
+.program-information__br {
+  @media (min-width: $tabletWidth) {
+    display: none;
+  }
+}
+
+.program-information__br--tablet {
+  display: none;
+
+  @media (min-width: $tabletWidth) {
+    display: block;
+  }
+}

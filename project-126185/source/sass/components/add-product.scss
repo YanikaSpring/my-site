@@ -1,0 +1,313 @@
+@import "../abstracts/variables.scss";
+@import "../fonts.scss";
+
+.add-product__container {
+  padding: 23px 0 0 0;
+  margin: 0 auto 33px auto;
+  width: 280px;
+
+  @media (min-width: $tabletWidth) {
+    padding: 0;
+    margin: 0 auto;
+    width: 720px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    width: 1240px;
+  }
+}
+
+.add-product {
+  position: relative;
+}
+
+.add-product__container::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $apple;
+  top: 39px;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tabletWidth) {
+    top: 24px;
+    left: 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    top: 24px;
+    left: 0;
+  }
+}
+
+.add-product__present-wrapper {
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    padding: 0 0 0 0;
+    margin: 0 0 85px 0;
+    width: 1240px;
+  }
+}
+
+.add-product__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  position: relative;
+  padding: 0 20px 0 0;
+  margin: 0 0 35px 0;
+  background-color: $white;
+  display: flex;
+  width: 226px;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 65px 27px;
+    width: 354px;
+    padding: 2px 19px 16px 23px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 0 81px 0;
+    padding: 0 18px 0 20px;
+  }
+}
+
+.add-product__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 280px;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 0 12px;
+    padding: 0;
+    width: 708px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 870px;
+    margin: 0 105px 0 20px;
+    padding: 0;
+    align-self: flex-start;
+  }
+}
+
+.add-product__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $mineShaft;
+  text-transform: uppercase;
+  margin: 14px 0 13px 2px;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 5px 0 0;
+  }
+}
+
+.add-product__extra-list {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $tundora;
+  margin: 0 0 25px 0;
+  padding: 0;
+
+  @media (min-width: $tabletWidth) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 3px 0 0 0;
+  }
+}
+
+.add-product__item {
+  border-top: 1px solid $silver;
+  margin: 0;
+  padding: 0 0 25px 0;
+
+  @media (min-width: $tabletWidth) {
+    border-top: 1px solid $silver;
+    padding: 25px 27px 27px 29px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin: 0;
+    border-left: 1px solid $silver;
+    border-right: 1px solid $silver;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 3px 0 4px 0;
+    width: 870px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-top: 1px solid $silver;
+    min-width: 896px;
+  }
+}
+
+.add-product__item:nth-child(2) {
+  @media (min-width: $tabletWidth) {
+    padding: 27px 27px 29px 29px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 3px 0 5px 0;
+  }
+}
+
+.add-product__item:last-child {
+  border-bottom: 1px solid $silver;
+  padding-bottom: 27px;
+
+  @media (min-width: $tabletWidth) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    border-bottom: 1px solid $silver;
+    padding: 3px 0 16px 0;
+  }
+}
+
+.add-product__item-wrapper {
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 11px 0 8px;
+    margin: 0 0 -3px 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    min-width: 610px;
+    padding: 20px 0 18px 1px;
+  }
+}
+
+.add-product__item:last-child .add-product__item-wrapper {
+  @media (min-width: $desktopWidth) {
+    padding: 12px 0 0 1px;
+  }
+}
+
+.add-product__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-transform: uppercase;
+  border: 0;
+  background-color: $apple;
+  padding: 9px 109px;
+  cursor: pointer;
+  width: 280px;
+  text-decoration: none;
+  margin: 0;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 0 7px;
+    padding: 10px 0;
+    text-align: center;
+    width: 632px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 241px;
+    padding: 9px 3px;
+    margin: 0;
+  }
+}
+
+.add-product__button:hover {
+  background-color: $appleDark;
+}
+
+.add-product__button:active {
+  background-color: $appleDark;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.add-product__item:last-child .add-product__button {
+  @media (min-width: $desktopWidth) {
+    margin-top: 15px;
+  }
+}
+
+.add-product__extra-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tabletWidth) {
+    margin: 2px 0 0 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    min-width: 288px;
+    margin: 2px 0 0 2px;
+  }
+}
+
+.add-product__extra-term {
+  @media (min-width: $tabletWidth) {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin-left: 2px;
+  }
+}
+
+.add-product__extra-description {
+  @media (min-width: $tabletWidth) {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 0 50px;
+  }
+}
