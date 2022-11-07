@@ -19,18 +19,21 @@ body {
 	grid-template-areas: "header header header header" "mine mine mine mine" "footer footer footer footer";
 }
 
+
 .page-mine {
   grid-area: mine;
 }
 
-.container, .container-skills {
+.container {
   max-width: 928px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
 .container-skills {
-  margin-bottom: 150px;
+  margin: 0 auto 150px auto;
+  padding: 0 16px;
+  max-width: 1200px;
 }
 
 .page-header {
@@ -230,4 +233,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style-type: none;
+}
+
+.slills-list__img {
+  height: 25px;
+  width: 25px;
+  display: inline;
+  align-self: center;
+  margin: 0 10px 0 0;
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: row;
 }
