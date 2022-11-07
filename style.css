@@ -19,14 +19,6 @@ body {
 	grid-template-areas: "header header header header" "mine mine mine mine" "footer footer footer footer";
 }
 
-@media (max-width: 760px) {
-  body {
-    grid-template-columns: minmax(320px, 760px);
-	  grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header" "mine" "footer";
-  }
-}
-
 
 .page-mine {
   grid-area: mine;
@@ -138,31 +130,6 @@ body {
   background-position: left;
 }
 
-.skill-html {
-  background-image: url("img/icon-html.svg");
-}
-
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
-}
-
 .portfolio {
   margin: 0 0 120px;
 }
@@ -184,17 +151,6 @@ body {
 
 .projects p {
   margin: 0 0 24px;
-}
-
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
 }
 
 .page-footer {
@@ -242,14 +198,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-}
-
-@media (max-width: 760px) {
-  .slills-list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .slills-list__img {
