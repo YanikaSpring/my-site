@@ -19,6 +19,14 @@ body {
 	grid-template-areas: "header header header header" "mine mine mine mine" "footer footer footer footer";
 }
 
+@media (max-width: 760px) {
+  body {
+    grid-template-columns: minmax(320px, 760px);
+	  grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "mine" "footer";
+  }
+}
+
 
 .page-mine {
   grid-area: mine;
@@ -234,6 +242,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+}
+
+@media (max-width: 760px) {
+  .slills-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .slills-list__img {
